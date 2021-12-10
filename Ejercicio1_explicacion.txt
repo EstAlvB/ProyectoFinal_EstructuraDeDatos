@@ -1,0 +1,9 @@
+Ejercicio 1 explicación
+Tenemos la función sortArray en donde pasamos 4 elementos: el arreglo y los valores de A ,B, C y D 
+que queramos poner en el input.
+Después en un for tenemos el algoritmo para que en cada elemento de nuestro arreglo que haga las operaciones de la función
+cuadrática. Es decir que cada elemento x cumpla con Ax^2 + Bx + C.
+Después tenemos el algoritmo de insertion sort que utilizamos en clase para hacer el arreglo se ordene
+de menor a mayor.
+y al final de nuestra función sortArray solo retornamos el arreglo ya ordenado y aplicado la función cuadrática en 
+cada elemento
