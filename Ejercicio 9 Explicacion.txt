@@ -1,0 +1,12 @@
+#Ejercicio 9 Explicacion
+
+#Primero inicializamos el nodo
+#Definimos nuestra funcion la cual vendria hacer ser una linkedlist, que recibira
+el parametro especial self, head y el valor a insertar.
+Colocamos una condición que define si nuestra lista circular se encuentra vacia,
+en el caso de que se cumpla, se crea un nodo con el valor a insertar que se apunta
+a si mismo. 
+A continuación se crea un lazo que correra mientras aun existan valores dentro de 
+la lista hasta encontrar la posicion donde se agregara el valor insertad, en este 
+las condiciones estan para comparar si el valor a insertar es mayor  o menor a 
+cualqueira de los valores de lista, para luego ser insertada donde corresponda.
