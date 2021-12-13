@@ -1,0 +1,26 @@
+##############################################
+-----------------EJERCICIO 7------------------
+##############################################
+
+> Este ejercicio utiliza una librería muy útil llamada "combinations".|
+Esta se encarga de crear todas las combinaciones posibles de un array.|
+Combinations recibe dos parámetros (array, número de elementos). El   |
+número de elementos determina cuántos elementos se seleccionarán del  |
+array, para crear las subsecuencias. El número de elementos también   |
+nos dice de qué tamaño serán las subsecuencias.
+
+> La función "num_of_arths" devuelve el número de subsecuencias       |
+aritméticas del arreglo "nums". ¿Cómo sucede esto? La función creará, |
+mediante la función combinations(), varias subsecuencias de distintos |
+tamaños (mayores o iguales 3). Cada una de estas subsecuencias        |
+es inicialmente aritmética. Sin embargo, si la condición de que la    |
+diferencia entre dos elementos consecutivos es igual no se cumple, la |
+subsecuencia deja de ser aritmética. Solo aquellas subsecuencias que  |
+no han cumplido en ninguno de sus elementos con esta condición se les |
+considera aritméticas; y por cada subsecuencia aritmética se le agrega|
+un +1 a la variable "num_of_as", que es la que retorna al final el    |
+número de subsecuencias aritméticas del arreglo "nums"
+
+> Las estructuras de datos usadas en este ejercicio son las listas y  |
+las tuplas. Debido a que cada subsecuencia que crea la función        |
+combinations es una tupla.
