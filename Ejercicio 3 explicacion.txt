@@ -1,0 +1,9 @@
+Ejercicio 3 Explicación
+Definimos la función duplicado el cual tendra dos elementos, el parametro especial self y la lista
+, despues usamos una condición que indica que la lista tenga al menos dos valores
+dentro de si para comparar. 
+En este caso se hace referencia a dos punteros, el primero recorrera la lista 
+desde el inicio mientras que el otro desde otro punto de la lista. Los lazos evitan que 
+los punteros se mantengan en el mismo nodo, es decir que por cada vez que se encuentren 
+volveran a recorrer la lista hasta encontrar un valor duplicado.
+Al final se retorna solo un puntero que contiene el valor duplicado
