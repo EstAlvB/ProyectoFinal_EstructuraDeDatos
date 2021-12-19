@@ -1,0 +1,46 @@
+##############################################
+-----------------EJERCICIO 12-----------------
+##############################################
+
+> El algoritmo se compone de dos funciones. La primera llamada        |
+"create_coords", la cual a su vez se basa en un algoritmo BFS. Esta   |
+función se encarga de crear coordenadas, en forma de tupla (x, y),    |
+de acuerdo a la forma de un árbol; empezando por la coordenada en el  |
+origen (0, 0), la cual corresponde al nodo raíz del árbol. Un ejemplo |
+visual es el siguiente:
+
+--------------X--------------
+    -2   -1   0    1    2
+              3             0 |
+          9        20       1 | Y
+    N        N-15       7   2 |
+
+> El algoritmo BFS crea las coordenadas en orden horizontal; en este  |
+caso sería por ejemplo: (0, 0), (-1, 1), (1, 1), ... Este orden en el |
+que se crean las coordernadas, corresponde al mismo orden en el que   |
+el usuario ingresa el arreglo "root", ya que este es un recorrido     |
+horizontal por los nodos del árbol. En el ejemplo visual, el arreglo  |
+root es el siguiente: root = [3, 9, 20, null, null, 15, 7]. Al crearse|
+las coordenadas, quedaría de la siguiente manera:
+
+root = [    3,        9,     20,    null,   null,     15,      7]
+coor = [(0, 0), (-1, 1), (1, 1), (-2, 2), (0, 2), (0, 2), (2, 2)]
+
+> Una vez se han creado las coordenadas, cada coordenada en (x) (que |
+cooresponde a la columna) se le asigna a un valor de los nodos del   |
+root. No se asigna si el valor del nodo es null; y sí dos o más nodos|
+comparten una misma columna se les asignará la misma columna. El     |
+diccionario del ejemplo quedaría así:
+
+dic = {0:[3, 15], -1:[9], 1:[20], 2:[7]}
+
+> En otra lista "keys" se almacenan las columnas, y se las ordena de |
+menor a mayor. Luego, de acuerdo al orden de esta lista, se busca en |
+el diccionario los valores de cada coordenada y estos valores se     |
+agregan a una lista final "vtt", la cual contiene el recorrido       |
+vertical de izquierda a derecha del árbol.
+
+> Las estructuras de datos usadas en este ejercicio son las listas y |
+los diccionarios. El diccionario se usó porque el tiempo de búsqueda |
+para un valor es constante, y además nos permite asignar una         |
+coordenada a un valor del nodo.
