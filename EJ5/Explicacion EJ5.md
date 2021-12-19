@@ -1,0 +1,4 @@
+# Explicacion EJ 5
+## Binary Fibonacci Tree
+
+cada fobinacci tree esta compuesto de otros fibonacci's trees mas pequeños, por lo que podemos usar el operador logico XOR para encontrar si da verdadero o falso. y solo tenemos que determinar el valor de los primero verdadero y falso, que son f(1) = False (tecnicamente f(0) tambien es falso, al igual que todos los menores a cero) y f(2) = True. de ahi con una funcion recursiva y operando XOR (^) podemos encontrar si el arbol final es verdadero o falso. por induccion tambien podemos ver que encontrar el numero de nodos en el grafo podria darnos el resultado con el numero de nodos (par = True, impar = False)
