@@ -1,0 +1,19 @@
+Explicación ejercicio 4
+Tenemos la función MissingRolls( rolls, mean, n) a la cal le pasaremos un arreglo con los rolls que 
+sí conocemos, el valor promedio de todos los rolls incluyendo los que no vimos, y un valor n que representa al número
+de rolls que no vimos/ conocemos sus valores.
+definimos estas variables, todo en base a lo que el ejercicio nos dice
+m = len(rolls)
+    total = (n + m) * mean
+    observed = sum(rolls)
+    missed = total - observed
+
+
+después tenemos un algoritmo para manejar una excepción si es que incertan valores de 0 en mean o n, ya que afectan
+ al dividirse para cero en las siguientes líneas de código.
+después, si es que no tenemos esos value errors tenemos el desarrollo del ejercicio
+ tenemos que dividir los rolls perdidos para n y solo tomaremos en cuenta la parte entera 
+tendremos un valor que es el sobrante los rolss perdidos menos el valor minimo por n 
+y después tendremos una variable que se llama el rest_rolls donde mostraremos el arreglo de los rolls que faltaban 
+usaremos odos nuestros datos anteriores para concatenarlos
+y retornamos rest_rolls
