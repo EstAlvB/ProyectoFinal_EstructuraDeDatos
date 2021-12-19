@@ -1,0 +1,8 @@
+Ejercicio 10 explicación
+En este ejercicio nos pide que demos el número de conexiones que un nodo tiene. La estructura de datos que vamos a usar es 
+un arreglo con listas enlazadas para representar el grafo y también DFS para recorrer los nodos hasta lo mas profundo 
+para saber sus conexiones.
+Vamos a necesitar la estructura de nodos para poder usarlos con la función append.
+En la funcion de num_connected_components recorremos el grafo y tenemos un contador para que se vayan sumando las
+ conexiones donde se usa la dfs para saber que los nodos han sido visitados mientras estamos contando.
+Y solo una función mas para aniadir edges en el input . 
