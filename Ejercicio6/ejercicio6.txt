@@ -1,0 +1,30 @@
+##############################################
+-----------------EJERCICIO 6------------------
+##############################################
+
+> El algoritmo de la función "num_of_odd_sum" devuelve como resultado el|
+número de subsarreglos que suman un número impar. ¿Cómo sucede esto? La |
+función se encarga de recorrer el arreglo "arr" en varias ocasiones,    |
+desde distintos índices. Generando así varios subarreglos. Pongamos un  |
+ejemplo: recibimos como parámetro el siguiente arreglo: arr = [1, 3, 5].|
+Si pusieramos en una lista los subarreglos generados en el ciclo while y|
+por el ciclo for, tendríamos lo siguiente:
+
+subS = [[1], [1, 3], [1, 3, 5], [3], [3, 5], [5]]
+
+> Esto es posible ya que el ciclo while empieza en el índice cero de arr|
+Luego el ciclo for, empezando desde el índice especificado, agrega un   |
+elemento de arr a un subarr que un principio está vacío. Aquí es donde  |
+se analiza si el subarr suma un número impar. En la siguiente iteración |
+al subarr se le agrega otro elemento proveniente del arr, y se vuelve a |
+verificar si estos dos elementos del subarr suman un número impar. Y así|
+hasta que se ha llegado al último elemento de arr. Cuando esto sucede el|
+subarr vuelve a estar vacío. Y el loop for vuelve a recorrer arr, pero  |
+desde el siguiente índice (el cual sería 1). Y se vuelven a crear subarrs. 
+
+> Cada vez que se crea un subarreglo, se analiza si la suma de cada uno |
+de sus elementos es impar. Si es así, se agrega un +1 a la variable     |
+"num", la cual al final retorna el número de subarreglos que suman un   |
+número impar.
+
+> La estructura de datos usada para este ejercicio es la lista.         |
