@@ -1,0 +1,12 @@
+#Ejercicio 8 Explicacion
+
+Primero importamos la bilioteca de heap, la cual nos permite implementar
+de una manera simple y más concisa las colas de prioridad, en este caso
+ordenamos nuestra lista intervals para reconocer cual de estas es la menor,
+y definimos un contador, un entero que guarda el tamañod e nuestra lista intervals
+y la lista que mantendra almacenada nuestra respuesta.
+Dentro de nuestro lazo for ordenamos nuestra lista queries para poder contar
+para definir los intervalos existentes en nuestra lista intervals. 
+Entonces almacenamos estos valores en n con el calculo respectivo,
+el cual es ta dado por [k-j+1, k], añadimos esta lista n en resultados
+y retornamos la lista resultado.
